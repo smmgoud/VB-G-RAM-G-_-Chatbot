@@ -1,0 +1,106 @@
+:root{--navy:#123f73;--blue:#1769aa;--pale:#eef6ff;--ink:#192b40;--muted:#6d7d8e;--line:#dbe5ef}
+*{box-sizing:border-box}body{margin:0;background:#edf2f7;color:var(--ink);font:15px/1.5 "Segoe UI",Arial,sans-serif}.app-shell{min-height:100vh}.topbar{height:78px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 clamp(16px,4vw,54px);gap:14px}.emblem{width:43px;height:43px;border:1px solid #d7e0ea;border-radius:10px;display:grid;place-items:center;color:var(--navy);font-size:12px;font-weight:800}.brand{display:flex;flex-direction:column;line-height:1.3}.brand strong{font-size:19px;color:var(--navy)}.brand span{font-size:12px;color:var(--muted)}.portal-link{margin-left:auto;text-decoration:none;color:var(--blue);font-weight:650}.layout{max-width:1240px;margin:34px auto;padding:0 20px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:22px}.side,.chat-panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 30px #173b5d0a}.side{padding:24px;height:max-content}.side-mark{width:40px;height:40px;display:grid;place-items:center;background:var(--pale);color:var(--blue);border-radius:12px;font-size:24px}.side h2{font-size:18px;margin:18px 0 8px}.side p{color:var(--muted);font-size:14px}.notice{background:#f6f9fc;border:1px solid var(--line);padding:13px;border-radius:12px;font-size:13px;margin:24px 0}.notice b{color:var(--navy)}button{font:inherit;cursor:pointer}.outline{background:white;border:1px solid #b8cce0;color:var(--navy);padding:10px 12px;border-radius:9px;width:100%;font-weight:600}.chat-panel{min-height:680px;display:flex;flex-direction:column;overflow:hidden}.chat-heading{padding:22px 25px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}.chat-heading h1{font-size:20px;margin:0;color:var(--navy)}.chat-heading p{font-size:13px;color:var(--muted);margin:4px 0 0}.online{white-space:nowrap;color:#607589;font-size:12px}.online i{display:inline-block;width:7px;height:7px;background:#25a56a;border-radius:50%;margin-right:5px}.messages{padding:22px 25px 12px;flex:1;overflow:auto;max-height:calc(100vh - 310px);min-height:320px}.message{display:flex;gap:10px;margin:0 0 17px;align-items:flex-start}.message.user{flex-direction:row-reverse}.avatar{flex:0 0 30px;height:30px;border-radius:10px;background:#e5eff9;color:var(--navy);display:grid;place-items:center;font-size:12px;font-weight:800}.user .avatar{background:var(--navy);color:white}.bubble{max-width:min(90%,720px);padding:12px 14px;border-radius:4px 14px 14px 14px;background:#f2f6fa;white-space:pre-wrap;overflow-wrap:anywhere}.user .bubble{background:var(--navy);color:white;border-radius:14px 4px 14px 14px}.bubble p{margin:0 0 8px}.bubble p:last-child{margin-bottom:0}.result-table-wrap{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;margin-top:10px;border-radius:6px}.result-table{width:100%;border-collapse:collapse;font-size:12px;margin:0;table-layout:auto;background:#fff}.result-table th,.result-table td{border:1px solid #d8e2ec;padding:8px 10px;text-align:left;vertical-align:top;min-width:0;overflow-wrap:anywhere;word-break:normal}.result-table th{white-space:normal}.result-table td{line-height:1.45}.result-table.detail-table{width:100%;table-layout:auto}.result-table.key-value-table tr>th:first-child,.result-table.key-value-table tr>td:first-child{width:34%;min-width:145px}.result-table.key-value-table tr>th:nth-child(2),.result-table.key-value-table tr>td:nth-child(2){width:66%}.result-table-wrap .result-table:has(td:nth-child(7)){min-width:680px}.result-table-wrap .result-table:has(td:nth-child(5)):not(.detail-table){min-width:520px}.result-table th{background:#e8f1fa;color:#123f73}.result-table a{color:#0868b2;font-weight:700}.choices{padding:0 25px 14px;display:flex;flex-wrap:wrap;gap:8px}.choice{border:1px solid #b9cde0;background:#fff;color:var(--navy);border-radius:20px;padding:8px 12px;font-size:13px;font-weight:600}.choice:hover{background:var(--pale)}.composer{border-top:1px solid var(--line);padding:15px 20px;display:flex;gap:10px}.composer input{min-width:0;flex:1;border:1px solid #cdd9e5;border-radius:12px;padding:13px 14px;font:inherit;outline:none}.composer input:focus{border-color:#5798d1;box-shadow:0 0 0 3px #1769aa16}.composer button{border:0;border-radius:12px;background:var(--blue);color:#fff;padding:0 19px;font-weight:700}.composer button span{margin-left:5px}.footnote{text-align:center;padding:0 12px 13px;color:#8190a0;font-size:11px}.loading{display:inline-flex;gap:5px;align-items:center;color:var(--muted)}.loading span{width:5px;height:5px;border-radius:50%;background:#6c8da9;animation:pulse .9s infinite alternate}.loading span:nth-child(2){animation-delay:.2s}.loading span:nth-child(3){animation-delay:.4s}@keyframes pulse{to{opacity:.25;transform:translateY(-3px)}}@media(max-width:800px){.result-table th,.result-table td{padding:7px;font-size:11px}.result-table-wrap .result-table:has(td:nth-child(7)){min-width:620px}.result-table.detail-table tr>th:first-child,.result-table.detail-table tr>td:first-child{min-width:125px}.layout{grid-template-columns:1fr;margin:14px auto;padding:0 10px}.side{display:none}.chat-panel{min-height:calc(100vh - 105px);border-radius:14px}.chat-heading{padding:17px}.messages{padding:17px;max-height:none}.choices{padding:0 17px 12px}.composer{padding:12px}.portal-link{font-size:12px}.brand span{max-width:190px}.online{display:none}}
+/* Prominent official Job Card number and deleted-status warning on detail pages. */
+.jobcard-highlight{width:100%;max-width:720px;border:1px solid #b8cde0;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 3px 12px #123f7312;margin:2px 0 6px}.jobcard-label{background:#0b4b83;color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:10px 14px}.jobcard-number{background:#0b4b83;color:#fff;font-size:clamp(22px,3vw,30px);font-weight:850;line-height:1.25;padding:0 14px 14px;overflow-wrap:anywhere}.jobcard-deleted{background:#fff0f0;border-top:3px solid #c62828;padding:12px 14px;color:#8b1010}.jobcard-status{font-size:clamp(20px,2.6vw,28px);font-weight:900;line-height:1.2;letter-spacing:.02em}.jobcard-date{font-size:16px;font-weight:750;margin-top:4px}
+
+/* Portal detail tables: preserve two-column label/value layouts and render nested
+   expenditure/employment tables as genuine multi-column grids. */
+.detail-kv-wrap{margin:10px 0 14px;width:100%;}
+.detail-grid-wrap{margin:10px 0 14px;width:100%;}
+.result-table.key-value-table{table-layout:fixed;width:100%;}
+.result-table.key-value-table tr>th:first-child,.result-table.key-value-table tr>td:first-child{width:34%;min-width:130px;font-weight:650;background:#f8fafc;color:#24384d;}
+.result-table.key-value-table tr>th:nth-child(2),.result-table.key-value-table tr>td:nth-child(2){width:66%;}
+.result-table.structured-table{table-layout:auto;width:100%;min-width:620px;}
+.result-table.structured-table tr>th:first-child,.result-table.structured-table tr>td:first-child{width:auto;min-width:0;}
+.result-table.structured-table tr>th:nth-child(2),.result-table.structured-table tr>td:nth-child(2){width:auto;}
+.result-table.structured-table th,.result-table.structured-table td{overflow-wrap:normal;word-break:normal;}
+.result-table.structured-table th{background:#63c8f1;color:#102f49;text-align:center;font-weight:750;}
+.result-table.structured-table td{text-align:left;}
+.result-table.structured-table td:first-child{font-weight:600;}
+.result-table.detail-table td,.result-table.detail-table th{white-space:normal;overflow-wrap:anywhere;word-break:normal;}
+.detail-table td:empty,.detail-table th:empty{padding:5px;}
+@media(max-width:800px){.result-table.key-value-table tr>th:first-child,.result-table.key-value-table tr>td:first-child{min-width:112px;width:38%;}.result-table.key-value-table tr>th:nth-child(2),.result-table.key-value-table tr>td:nth-child(2){width:62%;}.result-table.structured-table{min-width:620px;}}
+
+/* Muster Roll reports contain many attendance and payment columns. Keep the
+   original portal-style blue header and allow horizontal scrolling in chat. */
+.roll-heading{font-size:15px;color:#123f73;margin:2px 0 0;padding:8px 10px;border-left:4px solid #1769aa;background:#eaf3fb;border-radius:5px;}
+.muster-roll-table-wrap{max-width:100%;width:100%;overflow-x:auto;overflow-y:hidden;border:1px solid #d8e2ec;background:#fff;}
+.result-table.muster-roll-grid{width:max-content;min-width:100%;table-layout:auto;font-size:11px;}
+.result-table.muster-roll-grid th{background:#5f7fa2;color:#fff;font-weight:750;white-space:normal;min-width:48px;}
+.result-table.muster-roll-grid td{min-width:48px;max-width:180px;white-space:normal;overflow-wrap:anywhere;}
+.result-table.muster-roll-grid td:nth-child(1),.result-table.muster-roll-grid th:nth-child(1){min-width:38px;width:38px;}
+@media(max-width:800px){.result-table.muster-roll-grid{min-width:1050px;font-size:10px;}.result-table.muster-roll-grid th,.result-table.muster-roll-grid td{padding:5px 6px;}}
+
+
+/* Abstract Work search results: present the portal's complete summary grid in a readable, filter-friendly layout. */
+.abstract-work-title{font-weight:800;color:#23435c;text-decoration:underline;margin:2px 0 8px;font-size:14px;}
+.abstract-work-wrap{border:1px solid #c9d9cf;border-radius:0;background:#fff;}
+.result-table.abstract-work-table{width:max-content;min-width:100%;table-layout:auto;font-size:12px;}
+.result-table.abstract-work-table th{background:#f47c2c;color:#fff;text-align:center;vertical-align:middle;font-size:12px;font-weight:800;min-width:78px;max-width:160px;padding:10px 8px;white-space:normal;overflow-wrap:normal;}
+.result-table.abstract-work-table td{min-width:78px;max-width:220px;vertical-align:top;white-space:normal;overflow-wrap:anywhere;}
+.result-table.abstract-work-table th:first-child,.result-table.abstract-work-table td:first-child{min-width:110px;}
+.result-table.abstract-work-table th:nth-child(3),.result-table.abstract-work-table td:nth-child(3){min-width:170px;}
+.result-table.abstract-work-table th:last-child,.result-table.abstract-work-table td:last-child{min-width:150px;}
+@media(max-width:800px){.result-table.abstract-work-table{min-width:1450px;font-size:11px;}.result-table.abstract-work-table th,.result-table.abstract-work-table td{padding:7px 6px;}}
+
+.cash-summary-table th{background:#e8f1fa;color:#123f73}.cash-summary-table td:nth-child(2){font-weight:700;white-space:nowrap}.cash-summary-table td:first-child{font-weight:700;white-space:nowrap}
+.cash-summary-total th,.cash-summary-total td{font-weight:700;background:#f0f4f8;border-top:2px solid #64748b}
+
+
+/* Live official-portal field validation in the Muster Roll summary. */
+.portal-verification-note{font-size:.9rem;color:#425466;background:#f3f7fa;border-left:3px solid #5bc0de;padding:10px 12px;border-radius:4px;margin:8px 0 12px}.portal-check{display:inline-block;font-weight:700;font-size:.82rem;padding:3px 7px;border-radius:4px;white-space:nowrap}.portal-check-ok{color:#12633a;background:#e5f6ec}.portal-check-review{color:#8a4b00;background:#fff1d6}.cash-summary-table td small{display:block;margin-top:4px;color:#5d6b79;font-size:.75rem;line-height:1.35}
+
+.export-excel-button { display:inline-flex; align-items:center; margin-top:12px; padding:10px 14px; border:1px solid #1768a8; border-radius:8px; background:#1768a8; color:#fff; font:inherit; font-weight:700; cursor:pointer; }
+.export-excel-button:hover { background:#0f4f84; }
+
+/* Work-detail section labels should read as full-width headings, not empty key/value rows. */
+.detail-table .detail-section-heading th {
+  background: #eef5fb;
+  color: #173f68;
+  font-weight: 700;
+  text-align: left;
+  padding: 9px 12px;
+  border-top: 1px solid #d5e2ee;
+}
+
+/* Restore missing official section labels above their extracted nested tables. */
+.detail-table-section-title {
+  padding: 9px 12px;
+  background: #f7f9fc;
+  border: 1px solid #d5e0ee;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  color: #173f6d;
+  font-weight: 700;
+}
+.detail-table-section-title + .result-table-wrap table {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Keep the Muster Roll cash summary readable: fixed column proportions and wrapping headers. */
+.result-table.cash-summary-table{table-layout:fixed;min-width:900px;width:100%;}
+.cash-summary-table .col-work-code{width:25%}.cash-summary-table .col-muster-roll{width:13%}.cash-summary-table .col-wagelist{width:22%}.cash-summary-table .col-mandays{width:11%}.cash-summary-table .col-cash{width:18%}.cash-summary-table .col-source{width:11%}
+.cash-summary-table th,.cash-summary-table td{white-space:normal;overflow-wrap:anywhere;word-break:normal;vertical-align:top;}
+.cash-summary-table th{line-height:1.35;}
+@media(max-width:800px){.result-table.cash-summary-table{min-width:900px;}}
+
+/* Keep the cash summary columns separate: wrap long identifiers inside their own cells. */
+.result-table.cash-summary-table{table-layout:fixed;width:100%;min-width:900px;}
+.result-table.cash-summary-table th,.result-table.cash-summary-table td{white-space:normal!important;overflow-wrap:anywhere!important;word-break:break-word!important;vertical-align:top;}
+.result-table.cash-summary-table .col-work-code{width:25%;}
+.result-table.cash-summary-table .col-muster-roll{width:12%;}
+.result-table.cash-summary-table .col-wagelist{width:22%;}
+.result-table.cash-summary-table .col-mandays{width:11%;}
+.result-table.cash-summary-table .col-cash{width:18%;}
+.result-table.cash-summary-table .col-source{width:12%;}
+.result-table.cash-summary-table td:nth-child(2),.result-table.cash-summary-table td:nth-child(3){font-size:11px;}
+
+/* Data-quality panel: additive enhancement below the existing summary table. */
+.data-quality-panel{margin:12px 0;padding:12px 14px;border:1px solid #cbd5e1;border-left:4px solid #64748b;border-radius:8px;background:#f8fafc;color:#243447;font-size:.9rem;line-height:1.45}
+.data-quality-panel h4{margin:0 0 7px;font-size:1rem;color:#123f73}
+.data-quality-panel ul{margin:6px 0 8px;padding-left:20px}
+.data-quality-panel li{margin:4px 0;overflow-wrap:anywhere}
+.data-quality-panel p{margin:8px 0 0;font-size:.84rem;color:#475569}
+.data-quality-panel.has-quality-issues{border-left-color:#d97706;background:#fffaf0}
+.data-quality-panel.quality-check-ok{border-left-color:#16a34a;background:#f0fdf4}

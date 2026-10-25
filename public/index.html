@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123f73"><title>VB-G RAM G | Wanaparthy Chatbot</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="emblem" aria-hidden="true">भारत</div>
+    <div class="brand"><strong>VB-G RAM G</strong><span>Wanaparthy District • Citizen Search Assistant</span></div>
+    <a class="portal-link" href="https://vbgramgrep.dord.gov.in/vbgramg/homesearch.htm" target="_blank" rel="noreferrer">Official Portal ↗</a>
+  </header>
+  <main class="layout">
+    <aside class="side">
+      <div class="side-mark">✦</div><h2>How can I help?</h2>
+      <p>Search official VB-G RAM G records for Telangana → Wanaparthy.</p>
+      <div class="notice"><b>Live data</b><br>Results are requested from the official portal when you search. Availability depends on that portal.</div>
+      <button id="restart" class="outline">Start a new query</button>
+    </aside>
+    <section class="chat-panel">
+      <div class="chat-heading"><div><h1>VB-G RAM G Chatbot</h1><p>Ask for work, worker, muster roll, wage list and more.</p></div><span class="online"><i></i> Portal assistant</span></div>
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <div id="choices" class="choices"></div>
+      <form id="composer" class="composer">
+        <input id="messageInput" autocomplete="off" placeholder="Type a number or search value…" aria-label="Message">
+        <button type="submit" aria-label="Send message">Send <span>➤</span></button>
+      </form>
+      <div class="footnote">For official verification, open the linked record on the government portal.</div>
+    </section>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body></html>
